@@ -1,0 +1,109 @@
+.offer {
+  padding-bottom: calc(90px + 10 * (100vh - 375px) / 705);
+
+  &__title {
+    max-width: 430px;
+  }
+}
+
+.offer-content {
+  &__list {
+
+    row-gap: 30px;
+
+
+  }
+
+  &__item {
+    grid-column: 4 span;
+    justify-self: center;
+    text-align: center;
+    max-width: 240px;
+
+
+    @media (max-width: 991.98px) {
+      grid-column: 6 span;
+      row-gap: 30px;
+
+      &:last-child {
+        grid-column: 12 span;
+      }
+    }
+
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-top: 85px;
+    font-family: var(--font-family-2);
+    font-weight: 700;
+    font-size: calc(15px + 6 * (100vw - 320px) / 1530);
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: var(--color-mariner);
+
+    &--icon-1 {
+      background-image: url(./../img/offer-1.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+
+    &--icon-2 {
+      background-image: url(./../img/offer-2.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+
+    &--icon-3 {
+      background-image: url(./../img/offer-3.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+
+    &--icon-4 {
+      background-image: url(./../img/offer-4.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+
+    &--icon-5 {
+      background-image: url(./../img/offer-5.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+
+    &--icon-6 {
+      background-image: url(./../img/offer-6.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+
+    &--icon-7 {
+      background-image: url(./../img/offer-7.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+
+    &--icon-8 {
+      background-image: url(./../img/offer-8.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+
+    &--icon-9 {
+      background-image: url(./../img/offer-9.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 141.18%;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}

@@ -1,0 +1,42 @@
+.about {
+  padding-bottom: calc(90px + 10 * (100vh - 375px) / 705);
+
+
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: url(./../img/menu-line.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+
+    @media (max-width: 991.98px) {
+      flex-wrap: wrap;
+      background-image: none;
+    }
+  }
+
+  &__text {
+    max-width: 400px;
+
+    @media (max-width: 991.98px) {
+      margin-bottom: 85px;
+      max-width: 100%;
+    }
+
+    p {
+      margin: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 141.18%;
+      letter-spacing: 0.03em;
+      color: var(--color-main);
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

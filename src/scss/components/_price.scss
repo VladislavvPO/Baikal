@@ -1,0 +1,123 @@
+.price {
+  padding-bottom: calc(90px + 10 * (100vh - 375px) / 705);
+
+  &__title {
+    max-width: 360px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img {
+    @media (max-width: 991.98px) {
+      display: none;
+    }
+  }
+}
+
+.card-items {
+  display: flex;
+  gap: 30px;
+
+  @media (max-width: 768.98px) {
+    flex-wrap: wrap;
+  }
+}
+
+.card-price {
+  padding: 40px 0;
+  width: 285px;
+  border: 3px solid #2F70D9;
+  border-radius: 20px;
+
+  @media (max-width: 768.98px) {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+    padding-top: 140px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: var(--color-mariner);
+
+
+    &--icon-1 {
+      background-image: url(./../img/price-icon-1.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+
+    &--icon-2 {
+      background-image: url(./../img/price-icon-2.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+  }
+
+  &__list {
+    margin-bottom: 30px;
+    padding: 0 30px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 141.18%;
+    letter-spacing: 0.03em;
+    color: var(--color-main);
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 10px;
+      height: 10px;
+      border-radius: 100px;
+      background-color: var(--color-main);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: var(--color-mariner);
+  }
+
+  &__cost {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    font-family: var(--font-family-2);
+    color: #D95845;
+
+    span {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 26px;
+      letter-spacing: 0.03em;
+      color: #D95845;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.social {
+
+  &__link {
+    margin-right: 10px;
+
+    @media (max-width: 991.98px) {
+      margin-right: 5px;
+    }
+  }
+
+  &__img {}
+}
